@@ -5,17 +5,9 @@
 //Any other input than scissors, paper, stone to return
 var main = function (input) {
   if (input == "stone" || input == "scissors" || input == "paper") {
-    var myOutputValue = "";
-    console.log(myOutputValue);
-    var WLD = playSPS(input);
-    console.log(WLD);
-    myOutputValue = WLD;
-    return myOutputValue;
-  } else {
-    myOutputValue =
-      "Sorry, your input was not one of the three input options. Please try again!";
-    console.log(myOutputValue);
+    return playSPS(input);
   }
+  return "Sorry, your input was not one of the three input options. Please try again!";
 };
 
 //Game logic
